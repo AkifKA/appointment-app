@@ -36,7 +36,11 @@ const Doctors = ({ doctors }) => {
           </Col>
         ))}
       </Row>
-      <AddModal show={show} handleClose={() => setShow(false)} />
+      <AddModal
+        show={show}
+        handleClose={() => setShow(false)}
+        drName={selectedDrName}
+      />
     </Container>
   );
 };
