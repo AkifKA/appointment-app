@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import { useState } from "react";
 import AddModal from "./AddModal";
 
-const Doctors = ({ doctors }) => {
+const Doctors = ({ doctors, appointments, setAppointments }) => {
   const [show, setShow] = useState(false);
   const [selectedDrName, setSelectedDrName] = useState("");
   const handleClick = (drName) => {
@@ -40,6 +40,8 @@ const Doctors = ({ doctors }) => {
         show={show}
         handleClose={() => setShow(false)}
         drName={selectedDrName}
+        appointments={appointments}
+        setAppointments={setAppointments}
       />
     </Container>
   );
