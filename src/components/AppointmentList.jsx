@@ -3,9 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaTimesCircle } from "react-icons/fa";
 
-//? const dizi = []  -> true
-//? dizi ? x : y   ->  x
-
 const AppointmentList = ({ appointments, setAppointments }) => {
   const handleDelete = (id) => {
     setAppointments(appointments.filter((item) => item.id !== id));
