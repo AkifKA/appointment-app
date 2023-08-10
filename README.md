@@ -25,18 +25,17 @@ The application uses React's state management and useState hook to handle and up
 │     └── index.html
 ├── src
 │    ├── components
-│    │       ├── HastaEkle.jsx
-│    │       │
-│    │       └── HastaListe.jsx
+│    │       ├── AddModal.jsx
+│    │       ├── AppointmentList.jsx
+│    │       └── Doctors.jsx
 │    │
 │    ├── helper
+│    │       └── dada.jsx
+│    ├── pages
 │    │       └── Home.jsx
-│    │ 
-│    │ 
 │    ├── App.js
 │    ├── App.css
 │    ├── index.js
-│    └── index.css
 ├── package.json
 └── yarn.lock
 ```
