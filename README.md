@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# MAK Hospital Appointment Project
+In the this project, a simple React application is created to manage hospital appointments. The application allows users to view a list of doctors and schedule appointments with them. The technologies used in this project include React for building the user interface, Bootstrap for styling, and React-Bootstrap for using Bootstrap components within the React application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Technologies Used:
+   - React: A JavaScript library for building user interfaces, providing components and managing the application state.
+   - Bootstrap: A popular CSS framework for styling the user interface with pre-defined styles and components.
+   - React-Bootstrap: A library that integrates Bootstrap components into React applications, allowing the use of Bootstrap components as React components.
 
-## Available Scripts
+# Project Overview:
+   - `index.js`: The entry point of the application where the root component (`App`) is rendered into the HTML element with the id "root".
+   - `App.js`: The main component of the application that renders the `Home` component, which displays the hospital's appointment service.
+   - `Home.js`: The component responsible for rendering the main content of the application. It displays the list of doctors and the appointment list.
+   - `AddModal.js`: A modal component used to add new appointments. It takes input from the user for patient name and appointment date and time.
+   - `AppointmentList.js`: A component to display the list of appointments. It allows the user to delete appointments and mark them as consulted.
+   - `Doctors.js`: A component that displays a list of doctors, including their names and departments. It also provides the functionality to schedule appointments with a specific doctor by using the `AddModal` component.
 
-In the project directory, you can run:
+The application uses React's state management and useState hook to handle and update the list of doctors and appointments. The `AddModal` component manages its own state to handle the input for creating new appointments. React-Bootstrap components, such as `Modal`, `Button`, `Form`, `Container`, `Row`, and `Col`, are used to create the user interface with Bootstrap styling. The application makes use of event handling and conditional rendering to provide a simple and intuitive user experience for managing hospital appointments. <br>
 
-### `yarn start`
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzd0a3N1N3JxMzI4NDd6N3M4YnQ1NGN2N3B2dTV0MjF6bGd1bzcxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dUizNrYbLZrbElp5UN/giphy.gif" align="center" width="800">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Skeleton
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+├── public
+│     └── index.html
+├── src
+│    ├── components
+│    │       ├── HastaEkle.jsx
+│    │       │
+│    │       └── HastaListe.jsx
+│    │
+│    ├── helper
+│    │       └── Home.jsx
+│    │ 
+│    │ 
+│    ├── App.js
+│    ├── App.css
+│    ├── index.js
+│    └── index.css
+├── package.json
+└── yarn.lock
+```
